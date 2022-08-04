@@ -10,7 +10,7 @@ service = Service(driver_path)
 driver = webdriver.Chrome(service=service)
 
 driver.get("http://orteil.dashnet.org/experiments/cookie/")
-five_min_timeout = time.time() + 60 * 1  # 5 minutes from now
+five_min_timeout = time.time() + 60 * 5  # 5 minutes from now
 purchase_list = {}
 
 cookie = driver.find_element(By.XPATH, '//*[@id="cookie"]')
